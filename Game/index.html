@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="stylesheet.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito&family=Pixelify+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div>
+    <p class="text">Ace: 11</p>  
+    <p class="text" id="a">Three: 10</p>
+    <p class="text" id="b">King: 4</p>
+    <p class="text" id="c">Knight: 3</p>
+    <p class="text" id="d">Donna: 2</p>
+  </div>
+  <div id="user-list">
+    <p id="your-name">Waiting</p>
+    <p id="their-name"></p>
+  </div>
+  <div id="their-cards">
+    <image id="card-theirs1" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="card-theirs2" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="card-theirs3" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+  </div>
+  
+  <div id="play-feild">
+    <image id="card-strong" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="card-play1" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="card-play2" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="deck" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+  </div>
+  <div id="your-cards">
+    <image id="card-yours1" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="card-yours2" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+    <image id="card-yours3" class="card" src = "/Game/Cards/Background.png" draggable = 'false'></image>
+  </div>
+  <div id="status-div">
+    <p id="status">...</p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type = "text/javascript" src="app.js"></script>
+</body>
+</html>

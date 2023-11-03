@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../SharedFolder"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
