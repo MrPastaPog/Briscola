@@ -1,0 +1,91 @@
+
+.card {
+  max-width: 8%;
+
+  min-width: 0%;
+  max-height: 20%;
+  min-height: 0%;
+  margin: 10px;
+  width: 15%;
+  transition-duration: 0.3s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.card:hover {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.5),0 17px 50px 0 rgba(0,0,0,0.4);
+}
+#your-cards {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  top: 100%;
+  
+  transform: translateY(-300%);
+
+}
+#their-cards {
+  text-align: center;
+  position: relative;
+
+}
+#play-feild {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-150%)
+  
+}
+#play-feild>:first-child {
+  transform: rotate(90deg) translateY(100%);
+
+}
+#play-feild>:last-child {
+  z-index: 1;
+
+  transform: translateX(-650%)
+  
+}
+body {
+  background-color: seagreen;
+  
+}
+#your-name, #their-name, #status {
+  background-color: green;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: 'Gabarito', sans-serif;
+
+}
+#user-list {
+  width: 20%;
+  right: 2%;
+  border-radius: 15px;
+  position: absolute;
+  background-color: mediumseagreen;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#status-div {
+  width: 20%;
+  right: 2%;
+  bottom: 2%;
+  border-radius: 15px;
+  position: absolute;
+  background-color: mediumseagreen;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.text {
+  position: absolute;
+
+  font-family: 'Gabarito', sans-serif;
+}
+#a {
+  transform: translateY(100%);
+}
+#b {
+  transform: translateY(200%);
+}
+#c {
+  transform: translateY(300%);
+}
+#d {
+  transform: translateY(400%);
+}
