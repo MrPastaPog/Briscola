@@ -67,13 +67,8 @@ socket.on('Strong_Suit', (card) => {
 })
 
 
-socket.on('Reset_Feild', () => {
-  $('#card-play1').attr('src', `/Game/Cards/Background.png`)
-  $('#card-play2').attr('src', `/Game/Cards/Background.png`)
-  $('#your-name').text('Waiting')
-  $('#their-name').text('')
-  $('#status').text('...');
-  $('#card7').attr('src', `/Game/Cards/Background.png`)
+socket.on('Send Disconnect Page', () => {
+  location.href += '../Disconnect'
   
 })
 socket.on('Clear_Play_Feild', () => {
